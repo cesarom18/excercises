@@ -40,7 +40,7 @@ function miniMaxSum(arr) {
         }
     }
 
-    console.log(lower, higher);
+    return console.log(lower, higher);
 }
 
 const test1 = [1, 2, 3, 4, 5];
