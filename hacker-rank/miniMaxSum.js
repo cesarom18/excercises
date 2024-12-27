@@ -44,6 +44,6 @@ function miniMaxSum(arr) {
 }
 
 const test1 = [1, 2, 3, 4, 5];
-const test2 = [7, 69, 2, 221, 8974]
+const test2 = [7, 69, 2, 221, 8974];
 
 miniMaxSum(test1)
