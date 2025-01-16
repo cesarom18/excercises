@@ -1,17 +1,17 @@
 function challenge_2(names) {
-    const longitudMaxima = Math.max(...names.map(nombre => nombre.length));
-    const anchoMarco = longitudMaxima + 2 + 2;
+    const maxLength = Math.max(...names.map(name => name.length));
+    const width = maxLength + 2 + 2;
 
-    const marcoSuperior = '*'.repeat(anchoMarco);
+    const sup = '*'.repeat(width);
 
-    const contenido = names.map(nombre => {
-        const espaciosFaltantes = longitudMaxima - nombre.length;
-        return `* ${nombre}${' '.repeat(espaciosFaltantes)} *`;
+    const content = names.map(name => {
+        const spaces = maxLength - name.length;
+        return `* ${name}${' '.repeat(spaces)} *`;
     });
 
-    const marcoInferior = '*'.repeat(anchoMarco);
+    const inf = '*'.repeat(width);
 
-    return [marcoSuperior, ...contenido, marcoInferior].join('\n');
+    return [sup, ...content, inf].join('\n');
 }
 
 const test1 = ['midu', 'madeval', 'educalvolpz'];
