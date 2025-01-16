@@ -8,7 +8,7 @@ const test1 = null;
 
 ${process.argv[2]}(test1);`;
 
-fs.writeFile(`./codewars/${process.argv[2]}.js`, content, err => {
+fs.writeFile(`./${process.argv[3]}/${process.argv[2]}.js`, content, err => {
     if (err) {
         console.error(`Error Al Crear Archivo`);
     } else {
