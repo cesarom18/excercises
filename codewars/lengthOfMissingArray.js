@@ -1,7 +1,7 @@
 function lengthOfMissingArray(arr) {
-    if (!arrays || arrays.length === 0) return 0;
+    if (!arr || arr.length === 0) return 0;
 
-    const lengths = arrays.map(array => (array ? array.length : 0));
+    const lengths = arr.map(array => (array ? array.length : 0));
 
     if (lengths.includes(0)) return 0;
 
